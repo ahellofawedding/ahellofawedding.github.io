@@ -7,9 +7,10 @@
             "Does not mentally engage with Dad (this is good)",
             "Mom and Damon separate for their own time in Vegas",
             "Relates something to Damon's work",
-            "Grabs arm and lays head on shoulder",
+            "Grabs arm player's arm and lays head on their shoulder",
             "Mom makes clicking mouth noise that she makes when she's excited or thinking",
-            "Brings spicy trail mix or pretzels"
+            "Brings spicy trail mix or pretzels",
+            "Player gets a 'shayna punim'"
         ],
         "Wedding event": [
             "Carson team wins the bouquet toss",
@@ -26,7 +27,10 @@
             "Their first dance song is super cute and adorable and *just so them*",
             "Brian sends a V5",
             "Kaley whispers something in Brian’s ear",
-            "The Holy Couple exchange knowing glances"
+            "The Holy Couple exchange knowing glances",
+            "Brian and Kaley mention goblins (not initiated by Mark)",
+            "Brian's trademark shrug",
+            "Brian compares mustaches (not initiated by the other mustaches)"
         ],
         "Esther": [
             "Has strong opinions about the venue or other event details",
@@ -34,7 +38,9 @@
             "Offers to pay for dinner",
             "Pushes Kaley to lash out",
             "Insists to come by the AirBnB",
-            "Wears something flashy and expensive to show off"
+            "Wears something flashy and expensive to show off",
+            "Esther brings a wedding gift that was definitely NOT NEEDED",
+            "Esther gives Kaley something intended to control her in some way"
         ],
         "Dad": [
             "Dad is actually engaged to be wed",
@@ -48,7 +54,8 @@
             "Swimming with Dad and he does the 'drowned swimmer' thing",
             "Somehow doesn't know Kaley's name",
             "Talks about his girlfriends",
-            "Demonstrates something related to his fitness"
+            "Demonstrates something related to his fitness",
+            "Player gets a car checkup"
         ]
     }
 }

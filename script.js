@@ -31,7 +31,7 @@ async function generateBingo(urlLoaded = false) {
   table.innerHTML = "";  // Clear previous board
 
   // Initialize the seed variable to store the sum of character codes
-  let seed = 0;
+  let seed = 1;
 
   // Fetch the seedInput value from the input element
   var seedInput = document.getElementById("seed").value;
