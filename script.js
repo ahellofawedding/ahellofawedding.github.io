@@ -41,7 +41,8 @@ async function generateBingo(urlLoaded = false) {
   for (let index = 0; index < seedInput.length; index++) {
     // Get the character code of the current character and add it to sum
     const characterCode = seedInput.charCodeAt(index);
-    seed *= somePrimes[index % somePrimes.length] * characterCode * (index + 1);
+    seed += (seed * somePrimes[index % somePrimes.length]) * characterCode * (index + 1);
+    console.log(seed)
   }
 
   if (seedInput.length > 0) {
