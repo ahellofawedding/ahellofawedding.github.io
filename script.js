@@ -81,7 +81,7 @@ for(let rowIndex = 0; rowIndex < 5; rowIndex++) {
 
     // Check if current cell is the middle cell (3-2)
     if (rowIndex === 2 && colIndex === 2) {
-      cellElement.textContent = freespace;  // Set the content to 'freespace'
+      cellElement.innerHTML = freespace + "<br><span style='font-size: 10px'> (Free Space)</span>";  // Set the content to 'freespace'
       cellElement.classList.add('marked');  // Add 'marked' class
     } else {
       cellElement.textContent = choices[rowIndex];
