@@ -98,7 +98,9 @@ body {
 
 
 
-
+    :not(i, .material-symbols-outlined, .material-icons) {
+        font-family: Avenir !important;
+    }
 
   .heart {
     position: absolute;
