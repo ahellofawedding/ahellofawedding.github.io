@@ -44,7 +44,7 @@ body {
   }
   
   button {
-    font-size: 1em;
+    font-size: 2em;
     padding: 10px 20px;
     background-color: #228B22;
     color: #fff;
@@ -56,9 +56,16 @@ body {
   button:hover {
     background-color: #196619;
   }
+
+  #nontable {
+    height: 15vh;
+    margin: 1vh 5vw 9vh;
+  }
   
   /* Table styling */
   #bingoTable {
+    height: 70vh;
+    width: 90vw;
     margin: auto;
     border-collapse: collapse;
   }
@@ -77,11 +84,12 @@ body {
     color: #fff;
     padding: 40px;
     border: 2px solid #fff;
+    height: 17%;
   }
   
   td {
-    width: 130px;
-    height: 100px;
+    width: 15%;
+    height: 17%;
     border: 2px solid #228B22;
     background-color: #fff;
     color: #000;
