@@ -36,12 +36,12 @@ async function generateBingo(urlLoaded = false) {
   // Fetch the seedInput value from the input element
   var seedInput = document.getElementById("seed").value;
   seedInput.toLowerCase();
-
+  const somePrimes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
   // Iterate through each character of seedInput
   for (let index = 0; index < seedInput.length; index++) {
     // Get the character code of the current character and add it to sum
     const characterCode = seedInput.charCodeAt(index);
-    seed += characterCode;
+    seed *= somePrimes[index % somePrimes.length] * characterCode * (index + 1);
   }
 
   if (seedInput.length > 0) {
