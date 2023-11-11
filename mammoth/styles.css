@@ -1,0 +1,142 @@
+
+:root {
+  --primary-color: #dae0e7;
+  --primary-accent-color: #b5bcc1;
+  --hoverbutton: #55617c;
+  --bg: #2a2b2d;
+  --marked: #517297;
+  --border: #00000072;
+  --generate: rgb(93, 93, 174);
+  --generate-hover: rgb(67, 67, 125);
+}
+
+/* Body and global settings */
+body {
+    background-color: var(--bg); /* Light pink background */
+    font-family: "Georgia", serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  a {
+    color: #2e552e;
+    border-radius: 0.3em;
+    padding: 0.5em;
+    border: white 1px solid;
+    background-color: white;
+  }
+
+  a:hover {
+    color: #ffffff;
+    border-radius: 0.3em;
+    padding: 0.5em;
+    border: var(--border) 1px solid;
+    background-color: var(--hoverbutton);
+  }
+  
+  /* Title styling */
+  #title {
+    font-size: 2.5em;
+    color: var(--primary-color); /* Green color for title */
+    margin-top: 20px;
+  }
+  
+  /* Seed input and generate button */
+  #generate {
+    margin: 20px;
+  }
+  
+  #seed {
+    font-size: 1em;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+  }
+  
+  button {
+    font-size: 2em;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  
+  button:hover {
+    background-color: #196619;
+  }
+
+  #generatebtn {
+    background-color: var(--generate); 
+  }
+
+  #generatebtn:hover {
+    background-color: var(--generate-hover);
+  }
+
+  #nontable {
+    height: 15vh;
+    margin: 1vh 5vw 9vh;
+  }
+  
+  /* Table styling */
+  #bingoTable {
+    height: 70vh;
+    width: 90vw;
+    margin: auto;
+    border-collapse: collapse;
+  }
+
+  #title p, #title h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .seed {
+    text-decoration: underline;
+  }
+
+
+  
+  th {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 40px;
+    border: 2px solid var(--border);
+    height: 17%;
+  }
+  
+  td {
+    width: 15%;
+    height: 17%;
+    border: 2px solid var(--border);
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  td.marked {
+    background-color: var(--marked); /* Hot Pink for marked cells */
+    color: #fff;
+  }
+
+
+    :not(i, .material-symbols-outlined, .material-icons) {
+        font-family: Avenir !important;
+    }
+
+  .heart {
+    position: absolute;
+    background-color: pink;
+    pointer-events: none;  /* Allows clicks to pass through */
+    opacity: 1;
+    /* Define CSS transition for moving and fading out */
+    transition: all ease-out;
+  }
+  
+  

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mammoth Weekend</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+
+    <div id="nontable">
+    <div id="nav">
+        <a href="/">Home</a>
+        <a onclick="spawnHearts()">❄️</a>
+        <a href="./squares.json">View full JSON</a>
+    </div>
+    <!-- Seed input and Generate button -->
+    <div id="title"><h3>Mammoth Weekend</h3></div>
+    <div id="generate">
+        <input type="text" id="seed" placeholder="Name">
+        <button id="generatebtn" onclick="generateBingo()">Generate</button>
+    </div>
+</div>
+    
+    <!-- Bingo table -->
+    <table id="bingoTable"></table>
+
+    <script src="script.js"></script>
+  </body>
+</html>

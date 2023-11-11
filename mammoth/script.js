@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   loadFromURL(true);
 });
 
+
 // Fetch the JSON file containing the Bingo choices
 async function fetchJSON() {
   const response = await fetch('squares.json');
@@ -52,39 +53,44 @@ async function generateBingo(urlLoaded = false) {
     document.getElementById("title").appendChild(titleDiv);
   }
 
-  const data = await fetchJSON();
-  const { freespace, columns } = data;
 
-  // Create table headers
-  const headerRow = document.createElement("tr");
-  Object.keys(columns).forEach(key => {
-    const header = document.createElement("th");
-    header.textContent = key;
-    headerRow.appendChild(header);
-  });
-  table.appendChild(headerRow);
+    // Create table headers
+    const headerRow = document.createElement("tr");
+    table.appendChild(headerRow);
+
+const data = await fetchJSON();
+const { freespace, squares } = data;
 
   // Shuffle each column's choices and take the first 5 elements
-  for(const [key, choices] of Object.entries(columns)) {
-    shuffleArray(choices, seed);
+  for(const choices of squares) {
+    shuffleArray(squares, seed);
     seed++;
   }
 
+  freeSpaced = false;
   // Generate each row
 for(let rowIndex = 0; rowIndex < 5; rowIndex++) {
   updateURL();
   const rowElement = document.createElement("tr");
+  console.log('row')
 
-  let colIndex = 0;  // Initialize column index
-  for(const [key, choices] of Object.entries(columns)) {
+  // Initialize each column
+  for(let colIndex = 0; colIndex < 5; colIndex++) {
+  console.log('col')
+
     const cellElement = document.createElement("td");
 
+    
     // Check if current cell is the middle cell (3-2)
-    if (rowIndex === 2 && colIndex === 2) {
+    if (rowIndex === 2 && colIndex === 2 && !freeSpaced) {
       cellElement.innerHTML = freespace + "<br><span style='font-size: 10px'> (Free Space)</span>";  // Set the content to 'freespace'
       cellElement.classList.add('marked');  // Add 'marked' class
+      freeSpaced = true;
     } else {
-      cellElement.textContent = choices[rowIndex];
+      if (squares.length >= ((colIndex + 1) * 5) - 1) {
+        choices = squares.slice(colIndex * 5, (colIndex + 1) * 5)
+        cellElement.textContent = choices[rowIndex];
+      }
     }
 
     // Adding click event listener to toggle 'marked' class
@@ -94,7 +100,6 @@ for(let rowIndex = 0; rowIndex < 5; rowIndex++) {
     });
 
     rowElement.appendChild(cellElement);
-    colIndex++;  // Increment column index
   }
   table.appendChild(rowElement);
 }
