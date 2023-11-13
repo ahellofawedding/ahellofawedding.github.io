@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bingo Board Editor</title>
+    <!-- Add link to CSS here if needed -->
+    <link rel="stylesheet" type="text/css" href="editorStyles.css">
+</head>
+<body>
+    <div id="nav">
+        <a href="/">Home</a>
+          <a onclick="spawnHearts()">❤️</a>
+          <a href="./">Return to New Game</a>
+      </div>
+    <h1>Bingo Board Editor</h1>
+    <h2>(The ugliest thing I've ever fucking made)</h2>
+    <p>It's barely usable!</p>
+    <div class="twocol" style="display: flex; flex-direction: row;">
+        <div class="left" style="width: 45vw">
+            <!-- Participant Selection -->
+            <select id="participantSelect">
+                <!-- Options will be dynamically populated -->
+            </select>
+            <button onclick="deleteParticipant()">Delete Participant</button>
+            <br>
+            <button onclick="addParticipant()">New Participant...</button>
+            <br>
+
+            <br>
+
+            <!-- Freespace Management -->
+            <input type="text" id="freespaceInput" placeholder="New Freespace">
+            <button onclick="addFreespace()">Add Freespace</button>
+            <br>
+            <button onclick="deleteFreespace()">Delete a Freespace...</button>
+
+            <br>
+
+            <!-- Square Management -->
+            <input type="text" id="squareNameInput" placeholder="Square Name">
+            <button onclick="addSquare()">Add Square</button>
+            <br>
+            <button onclick="deleteSquare()">Delete a Square...</button>
+            <br>
+
+            <!-- Interaction List Management -->
+            <input type="text" id="interactionInput" placeholder="Interaction (comma-separated)">
+            <button onclick="addInteraction()">Add interactions to...</button>
+            <br>
+            <button onclick="removeInteraction()">Remove all interactions from...</button>
+        </div>
+            <!-- JSON Display -->
+    <div id="jsonDisplayContainer" style="width: 45vw; height: 70vh; overflow: scroll">
+        <h2>Current Board:</h2>
+        <pre id="jsonDisplay"></pre>
+    </div>
+    </div>
+    
+
+    <br>
+    <!-- Save Changes -->
+    <button onclick="downloadJSON()" class="bigbutton">Download JSON</button>
+
+    <script src="editorScript.js"></script>
+</body>
+</html>

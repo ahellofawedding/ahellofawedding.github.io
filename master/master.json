@@ -1,0 +1,137 @@
+{
+    "Mark": {
+      "type": "swamper",
+      "freespaces": [
+        "Is dripped out"
+      ],
+      "squares": {
+        "Talks about girl problems": [],
+        "Calls Goose 'Boner Boy'": [
+          "Goose"
+        ]
+      }
+    },
+    "Brian": {
+      "type": "swamper",
+      "freespaces": [],
+      "squares": {
+        "Suggests going climbing": [],
+        "Mentions Santi": [],
+        "Compliments a mustache": []
+      }
+    },
+    "Kaley": {
+      "type": "swamper",
+      "freespaces": [],
+      "squares": {}
+    },
+    "Jacob": {
+      "type": "swamper",
+      "freespaces": [],
+      "squares": {
+        "Says the word 'cohort'": [],
+        "still doesn't have working car A/C": []
+      }
+    },
+    "Kathryn": {
+      "type": "swamper",
+      "freespaces": [],
+      "squares": {}
+    },
+    "Danielle": {
+      "type": "swamper",
+      "freespaces": [],
+      "squares": {
+        "Comes up with a jingle": [],
+        "Compliments Mark": [
+          "Mark"
+        ],
+        "Brings a brand new board game": []
+      }
+    },
+    "Chris": {
+      "type": "swamper",
+      "freespaces": [],
+      "squares": {
+        "Goes Goblin Mode": [],
+        "Makes Danielle look bad": [
+          "Danielle"
+        ],
+        "Does a character": []
+      }
+    },
+    "Mama": {
+      "type": "parent",
+      "freespaces": [],
+      "squares": {
+        "Talks about the bad state of the Big Bear house": [],
+        "Brings spicy trail mix or pretzels": [],
+        "Calls someone a 'Sheyna Punim'": [],
+        "Gives Echo WAY too many treats": [
+            "Echo"
+        ]
+      }
+    },
+    "Dad": {
+      "type": "parent",
+      "freespaces": [],
+      "squares": {
+        "Plays guitar": [],
+        "Mentions vegan bananas": [
+          "Mark",
+          "Brian",
+          "Jacob"
+        ],
+        "Is naked or barely dressed": [],
+        "Mentions how hot Havasu is": [],
+        "Doesn't get why we don't own houses yet": [
+          "Mark",
+          "Brian",
+          "Kaley",
+          "Jacob",
+          "Danielle",
+          "Chris",
+          "Kathryn"
+        ],
+        "Doesn't stop taking pictures": []
+      }
+    },
+    "Esther": {
+      "type": "parent",
+      "freespaces": [],
+      "squares": {
+        "Brings up something expensive she paid for": [
+            "Kaley"
+        ]
+      }
+    },
+    "Goose": {
+      "type": "pet",
+      "freespaces": [],
+      "squares": {
+        "Humps competitively": [
+          "Echo",
+          "Zuko"
+        ]
+      }
+    },
+    "Bear": {
+      "type": "pet",
+      "freespaces": [
+        "Gets upset"
+      ],
+      "squares": {}
+    },
+    "Echo": {
+      "type": "pet",
+      "freespaces": [],
+      "squares": {}
+    },
+    "Zuko": {
+      "type": "pet",
+      "freespaces": [
+        "Barks incredibly loudly"
+      ],
+      "squares": {}
+    }
+  }

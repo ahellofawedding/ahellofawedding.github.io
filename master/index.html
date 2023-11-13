@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Carson Bingo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+
+    <div id="nontable">
+    <div id="nav">
+      <a href="/">Home</a>
+        <a onclick="spawnHearts()">❤️</a>
+        <a href="boardEditor.html">Modify the JSON</a>
+    </div>
+    <div id="title"><h3>Carson Bingo</h3></div>
+    <div id="generate">
+        <h2>Who will be at this gathering?<br><span style="font-size: 0.75em;">(including yourself)<span></h2>
+      <div id="participantsContainer"></div>
+      <h2>What is your name?</h2>
+      <input type="text" id="seed" placeholder="You, as listed above">
+      <br>
+      <br>
+      <br>
+      <button onclick="generateBingo()" id="generatebtn">Generate</button>
+    </div>
+</div>
+    
+    <!-- Bingo table -->
+    <table id="bingoTable"></table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
